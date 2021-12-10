@@ -9,3 +9,4 @@ Lista de nome e RA:
 - Eduardo Vasconcelos leite / 21425671
 - Guilherme Morales Gomes / 21447735
 - Nathan Reis da Silva / 21369631
+- Ricardo Amaral Souza / 21433825
