@@ -1,0 +1,16 @@
+<div class="content">
+  <ion-label>Título</ion-label>
+  <ion-input [(ngModel)]="titulo" placeholder="Título da nota"></ion-input>
+  <ion-label>Conteúdo</ion-label>
+  <ion-input
+    [(ngModel)]="conteudo"
+    placeholder="Digite o conteúdo da nota"
+  ></ion-input>
+
+  <ion-button fill="solid" shape="round" (click)="inserir()"
+    >Adicionar</ion-button
+  >
+  <ion-button fill="outline" shape="round" (click)="voltar()"
+    >Voltar</ion-button
+  >
+</div>

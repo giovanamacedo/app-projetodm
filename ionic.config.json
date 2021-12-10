@@ -1,0 +1,7 @@
+{
+  "name": "r_dinamico-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

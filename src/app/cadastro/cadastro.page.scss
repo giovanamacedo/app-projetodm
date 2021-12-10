@@ -1,0 +1,97 @@
+ion-content{
+  --ion-background-color: transparent;
+}
+
+.bg-color{
+  background: #e9ecef;
+}
+
+ion-header{
+  position: absolute;
+}
+
+ion-toolbar{
+  --ion-background-color: transparent;
+  --opacity: 0;
+}
+
+ion-card{
+  --ion-background-color:transparent;
+    box-shadow: none !important;
+    background-color: transparent !important;
+}
+
+ ion-card-title{
+   margin-top: 50px !important;
+   font-size: 25px;
+   color: black;
+   font-weight: 600;
+   text-align: center;
+
+ }
+
+ ion-card-subtitle{
+   text-align: center;
+   padding-top: 15px !important;
+   font-size: 13px;
+   color: #888C91;
+   font-weight: 400;
+   text-transform: none;
+   padding: 0 30px;
+ }
+
+ ion-item{
+  color:#74787E;
+   --border-color:#D4D7DB;
+
+  --highlight-color-focused:#8c36a5;
+  --padding-start:0;
+  --inner-padding-end:0;
+  --highlight-color-invalid: #8c36a5;
+  --highlight-color-valid: #8c36a5;
+  
+  font-size: 13px;
+  ion-input{
+    color:#74787E;
+    font-size: 13px;
+    ion-icon{
+      padding-right: 6px;
+      font-size: 18px;
+    }
+  }
+
+  ion-input:hover{
+    color:#8c36a5   ;
+
+  }
+}
+
+.cadastro-btn-wrap{
+  text-align: center;
+  padding-top: 20px;
+
+    .cadastro-btn{
+      --ion-color-primary: #8c36a5;
+      color: #f4f6fa;
+  }
+  
+}
+
+.text-tag{
+  margin-top: 30px;
+  text-align: center;
+  span{
+    font-size: 13px;
+    font-weight: normal;
+    color: #343a40;
+  }
+}
+
+.social-btns{
+  margin-top: 25px;
+  text-align: center;
+  ion-button{
+    width: 30px;
+    padding-left: 5px !important;
+  }
+}

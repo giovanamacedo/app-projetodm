@@ -1,0 +1,36 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar> </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-no-margin">
+  <ion-card>
+    <ion-img src="../../assets/images/header.png" class="img-back"></ion-img>
+  </ion-card>
+
+  <div class="title ion-padding">
+    <h1>Olá!</h1>
+    <p>O que deseja anotar hoje?</p>
+  </div>
+
+  <div id="container">
+    <ion-list>
+      <ion-item *ngFor="let pessoa of dados">
+        <ion-icon name="caret-forward-outline"></ion-icon>
+        <ion-label [routerLink]="['/detalhes', pessoa.id]"
+          >{{pessoa.conteudo}}</ion-label
+        >
+        <ion-icon
+          (click)="remover(pessoa.id)"
+          color="danger"
+          name="close-sharp"
+        ></ion-icon>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button size="small" color="light" routerLink="/novo">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

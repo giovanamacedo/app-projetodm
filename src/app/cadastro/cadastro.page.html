@@ -1,0 +1,73 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <!-- <ion-title>cadastro</ion-title> -->
+    <ion-buttons slot="start"
+      ><ion-back-buttons defaulthref="login" text=""></ion-back-buttons
+    ></ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="bg-color">
+  <ion-card class="ion-no-margin">
+    <ion-card-header>
+      <ion-card-title>Cadastre-se</ion-card-title>
+      <ion-card-subtitle>
+        Crie sua conta preenchendo o formulário abaixo
+      </ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-input name="names" type="text" placeholder="Nome completo">
+          <ion-icon name="person-outline"></ion-icon>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input name="telefone" type="text" placeholder="Telefone">
+          <ion-icon name="call-outline"></ion-icon>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input name="email" type="text" placeholder="E-mail">
+          <ion-icon name="mail-outline"></ion-icon>
+        </ion-input>
+      </ion-item>
+    </ion-card-content>
+
+    <div class="cadastro-btn-wrap">
+      <ion-button
+        routerLink="/home"
+        shape="round"
+        size="small"
+        fill="solid"
+        class="cadastro-btn"
+        >Cadastrar</ion-button
+      >
+      <ion-button
+        routerLink="/login"
+        shape="round"
+        size="small"
+        fill="outline"
+        shape="round"
+        color="dark"
+        >Voltar</ion-button
+      >
+    </div>
+
+    <div class="text-tag">
+      <span>Ou cadastre-se com as redes sociais</span>
+    </div>
+
+    <div class="social-btns">
+      <ion-button fill="clear" class="facebook-btn ion-no-padding"
+        ><ion-img src="../../assets/images/facebook.png"></ion-img
+      ></ion-button>
+
+      <ion-button fill="clear" class="google-btn ion-no-padding"
+        ><ion-img src="../../assets/images/google.png"></ion-img
+      ></ion-button>
+    </div>
+  </ion-card>
+</ion-content>

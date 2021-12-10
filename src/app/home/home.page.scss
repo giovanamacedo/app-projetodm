@@ -1,0 +1,32 @@
+ion-header{
+  position: absolute;
+}
+
+ion-toolbar{
+  --ion-background-color: transparent;
+  --opacity: 0;
+}
+
+ion-content{
+  --ion-background-color:#e9ecef;
+}
+
+ion-card{
+  --ion-background-color: transparent;
+  box-shadow: none !important;
+}
+
+.title{
+  align-items: center;
+  padding-bottom: 32px;
+
+  h1{
+    margin: 0 0 0 16px;
+    color: black;
+  }
+
+  p{
+    margin: 0 0 0 16px;
+    color: black;
+  }
+}

@@ -1,0 +1,32 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar> </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-no-margin">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Olá! Deseja tirar uma foto?</ion-card-title>
+
+      <div class="text-tag">
+        <span>Basta clicar no botão abaixo ;)</span>
+      </div>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card-content>
+    <div>
+      <img [src]="foto" *ngIf="foto" />
+    </div>
+
+    <ion-fab vertical="buttom" horizontal="center" slot="fixed">
+      <ion-fab-button
+        (click)="fotografar()"
+        shape="round"
+        fill="solid"
+        class="login-btn"
+      >
+        <ion-icon name="camera"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </ion-card-content>
+</ion-content>

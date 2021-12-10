@@ -1,0 +1,81 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <!-- <ion-title>telalogin</ion-title> -->
+  </ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-back-button defaulthref="login" text=""></ion-back-button>
+  </ion-buttons>
+</ion-header>
+
+<ion-content class="ion-no-margin">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Bem vindo!</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card-content>
+    <div class="wrapforms">
+      <ion-item>
+        <ion-input
+          type="text"
+          name="email"
+          placeholder="Email"
+          [(ngModle)]="email"
+          required
+          ><ion-icon name="mail-outline"></ion-icon
+        ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input
+          type="password"
+          name="senha"
+          placeholder="Senha"
+          [(ngModle)]="senha"
+          required
+          ><ion-icon name="lock-closed-outline"></ion-icon
+        ></ion-input>
+      </ion-item>
+    </div>
+
+    <div class="login-btn-wrap">
+      <ion-button
+        routerLink="/home"
+        shape="round"
+        size="small"
+        fill="solid"
+        class="login-btn"
+        >Entrar</ion-button
+      >
+      <ion-button
+        routerLink="/login"
+        shape="round"
+        size="small"
+        fill="outline"
+        shape="round"
+        color="dark"
+        >Voltar</ion-button
+      >
+    </div>
+
+    <div class="text-tag">
+      <span>Ou entre pelas redes sociais</span>
+    </div>
+
+    <div class="social-btns">
+      <ion-button fill="clear" class="facebook-btn ion-no-padding"
+        ><ion-img src="../../assets/images/facebook.png"></ion-img
+      ></ion-button>
+
+      <ion-button fill="clear" class="google-btn ion-no-padding"
+        ><ion-img src="../../assets/images/google.png"></ion-img
+      ></ion-button>
+    </div>
+  </ion-card-content>
+
+  <div class="ion-card-footer">
+    <span>Não possui uma conta?</span
+    ><button class="ion-no-padding" routerLink="/cadastro">Cadastre-se</button>
+  </div>
+</ion-content>

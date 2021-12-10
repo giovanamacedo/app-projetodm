@@ -1,0 +1,50 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar></ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-no-margin">
+  <ion-card-content>
+    <ion-input [(ngModel)]="id" placeholder="ID"></ion-input>
+    <ion-button
+      (click)="buscarPorId(id)"
+      size="small"
+      fill="solid"
+      shape="round"
+      class="entrar-btn"
+      >Buscar</ion-button
+    >
+    <br /><br />
+    <ion-input [(ngModel)]="name" placeholder="Título"></ion-input>
+    <ion-input
+      [(ngModel)]="conteudo"
+      placeholder="Digite o conteúdo da nota..."
+    ></ion-input>
+    <ion-button
+      (click)="salvar()"
+      size="small"
+      fill="solid"
+      shape="round"
+      class="entrar-btn"
+      >Salvar</ion-button
+    >
+    <ion-button
+      color="dark"
+      (click)="atualizar(id)"
+      size="small"
+      fill="outline"
+      shape="round"
+      >Atualizar</ion-button
+    >
+  </ion-card-content>
+
+  <div id="container">
+    <ion-list *ngFor="let product of products">
+      <ion-item>
+        <ion-label>
+          {{product.id}}. {{product.name}} - {{product.conteudo}}
+        </ion-label>
+        <ion-button color="danger" (click)="remover(product.id)">X</ion-button>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

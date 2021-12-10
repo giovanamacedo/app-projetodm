@@ -1,0 +1,68 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <!-- <ion-title>login</ion-title> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-no-margin">
+  <ion-card>
+    <ion-img src="../../assets/images/header.png" class="img-back"></ion-img>
+    <ion-card-header>
+      <ion-card-title>Bem vindo!</ion-card-title>
+      <ion-card-subtitle
+        >Entre ou cadastre-se em nosso aplicativo.</ion-card-subtitle
+      >
+    </ion-card-header>
+
+    <ion-card-content>
+      <div class="login-btns">
+        <ion-button
+          routerLink="/telalogin"
+          size="small"
+          fill="solid"
+          shape="round"
+          class="entrar-btn"
+          >Login</ion-button
+        >
+        <ion-button
+          routerLink="/cadastro"
+          size="small"
+          fill="outline"
+          shape="round"
+          color="dark"
+          >Cadastro</ion-button
+        ><br /><br />
+        <ion-button
+          routerLink="/camera"
+          size="small"
+          fill="solid"
+          shape="round"
+          color="dark"
+          >Acesse nossa câmera</ion-button
+        >
+        <ion-button
+          routerLink="/api"
+          size="small"
+          fill="solid"
+          shape="round"
+          class="entrar-btn"
+          >Acesse nossa API</ion-button
+        >
+      </div>
+
+      <div class="text-tag">
+        <span>Ou entre pelas redes sociais</span>
+      </div>
+
+      <div class="social-btns">
+        <ion-button fill="clear" class="facebook-btn ion-no-padding"
+          ><ion-img src="../../assets/images/facebook.png"></ion-img
+        ></ion-button>
+
+        <ion-button fill="clear" class="google-btn ion-no-padding"
+          ><ion-img src="../../assets/images/google.png"></ion-img
+        ></ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

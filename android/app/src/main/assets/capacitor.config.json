@@ -1,0 +1,6 @@
+{
+	"appId": "com.projetodm",
+	"appName": "projetodm",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
