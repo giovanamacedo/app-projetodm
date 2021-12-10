@@ -8,3 +8,4 @@ Lista de nome e RA:
 - Vitor Souza Oliveira / 21426134
 - Eduardo Vasconcelos leite / 21425671
 - Guilherme Morales Gomes / 21447735
+- Nathan Reis da Silva / 21369631
